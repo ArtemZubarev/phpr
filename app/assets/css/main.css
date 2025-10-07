@@ -1,0 +1,30 @@
+/* глобальные стили */
+html,
+body {
+  margin: 0;
+}
+
+* {
+  font-family: Poppins, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.border-white-10 {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.border-accent {
+  border: 1px solid #17e5c2;
+}
+.text-white-gradient {
+  background: linear-gradient(90deg, #fff 22.73%, #828282 112.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-accent-gradient {
+  background: linear-gradient(87deg, #14daba -3.08%, #fff 105.29%);
+}
