@@ -1,7 +1,9 @@
 <template>
   <BaseContainer>
     <section class="mt-[117px]">
-      <div class="above relative bg-foreground rounded-xl py-[82px] px-[107px]">
+      <div
+        class="above relative bg-foreground rounded-xl pt-[82px] pb-[152px] px-[107px]"
+      >
         <img
           class="absolute top-0 right-0 max-w-[605px]"
           src="/assets/images/venom.png"
@@ -29,11 +31,13 @@
           />
         </div>
       </div>
-      <div class="below bg-[#fff] mt-[-70px] pt-[140px] px-[107px] rounded-xl">
+      <div
+        class="below bg-[#fff] mt-[-70px] pt-[140px] pb-[80px] px-[107px] rounded-xl"
+      >
         <h2 class="title text-background text-title-xl font-semibold">
           What this means for users:
         </h2>
-        <div class="relative flex justify-between gap-[10%]">
+        <div class="relative flex justify-between gap-[10%] mt-[30px]">
           <div
             class="line absolute w-full top-[42px] h-[1px] bg-background"
           ></div>

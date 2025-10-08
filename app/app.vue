@@ -4,6 +4,18 @@
     <Hero />
     <What />
     <BuiltOn />
+    <Why />
+    <HowItWorks />
+    <BaseContainer>
+      <div class="bg-foreground h-[300px mt-[90px] rounded-xl"></div>
+    </BaseContainer>
+    <Crawl
+      text="Don't hesitate, download the innovative vxchange wallet and manage your PHPR"
+    />
+    <Benefits />
+    <Unique />
+    <Technology />
+    <div class="relative h-[2000px] bg-red"></div>
     <!-- <NuxtRouteAnnouncer />
     <NuxtWelcome /> -->
   </div>
