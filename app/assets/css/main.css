@@ -28,6 +28,9 @@ html {
 .bg-accent-gradient {
   background: linear-gradient(87deg, #14daba -3.08%, #fff 105.29%);
 }
+.bg-ready-gradient {
+  background: linear-gradient(87deg, #fff -3.08%, #14daba 105.29%);
+}
 .bg-tab-border {
   border: 1.654px solid rgba(255, 255, 255, 0.55);
   background: linear-gradient(

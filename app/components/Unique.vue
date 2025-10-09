@@ -1,38 +1,61 @@
 <template>
-  <BaseContainer>
-    <section class="unique relative z-10 pt-[130px] pb-[160px]">
-      <h2 class="text-title-xl text-center text-white-background">
-        Why It’s Unique
-      </h2>
-      <div class="flex justify-center">
-        <div
-          class="relative mt-[34px] mb-[50px] text-title px-6 py-3 rounded-xl font-medium transition duration-300 bg-tab-border text-mainFaded hover:text-main hover:bg-foreground/40"
+  <div class="relative">
+    <BaseContainer>
+      <section class="unique relative z-10 pt-[130px] pb-[160px]">
+        <h2
+          class="text-title-xl text-center text-white-background font-semibold"
         >
-          <span class="text-accent-gradient">
-            Unlike stablecoins or speculative tokens, PHPR is:
-          </span>
+          Why It’s Unique
+        </h2>
+        <div class="flex justify-center">
+          <div
+            class="relative mt-[34px] mb-[50px] text-title px-6 py-3 rounded-xl font-medium transition duration-300 bg-tab-border text-mainFaded hover:text-main hover:bg-foreground/40"
+          >
+            <span class="text-accent-gradient">
+              Unlike stablecoins or speculative tokens, PHPR is:
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="flex justify-between gap-[28px]">
-        <div
-          v-for="block in blocks"
-          class="block bg-[#F3F3F3] rounded-xl max-[489px] w-full py-[30px] pl-[43px] pr-[24px]"
-        >
-          <img class="mb-[24px] w-[43px] h-[43px]" :src="block.image" alt="" />
-          <h3 class="text-title-sm text-background mb-[9px]">
-            {{ block.title }}
-          </h3>
-          <p class="text-text-md text-background">{{ block.text }}</p>
+        <div class="flex justify-between gap-[28px]">
+          <div
+            v-for="(block, i) in blocks"
+            :key="i"
+            ref="animatedBlocks"
+            class="block bg-[#F3F3F3] rounded-xl max-[489px] w-full py-[30px] pl-[43px] pr-[24px]"
+          >
+            <img
+              class="mb-[24px] w-[43px] h-[43px]"
+              :src="block.image"
+              alt=""
+            />
+            <h3 class="text-title-sm text-background mb-[9px]">
+              {{ block.title }}
+            </h3>
+            <p class="text-text-md text-background">{{ block.text }}</p>
+          </div>
         </div>
-      </div>
-    </section>
-  </BaseContainer>
+      </section>
+    </BaseContainer>
+    <!-- <img
+      class="absolute w-full left-0 bottom-0"
+      src="/assets/images/benefits-bg.png"
+      alt=""
+    /> -->
+  </div>
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted } from "vue";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import wallet from "/assets/images/wallet.svg";
 import shield from "/assets/images/shield.svg";
 import pp from "/assets/images/pp.svg";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const animatedBlocks = ref<HTMLDivElement[]>([]);
 
 const blocks = [
   {
@@ -51,4 +74,18 @@ const blocks = [
     text: "Practical, low-cost remittance",
   },
 ];
+
+onMounted(() => {
+  gsap.from(animatedBlocks.value, {
+    y: 80,
+    opacity: 0,
+    duration: 1.1,
+    ease: "power3.out",
+    stagger: 0.25, // последовательное появление
+    scrollTrigger: {
+      trigger: animatedBlocks.value[0],
+      start: "top 80%", // когда первый блок в зоне видимости
+    },
+  });
+});
 </script>

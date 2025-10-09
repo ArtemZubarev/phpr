@@ -1,5 +1,7 @@
 <template>
-  <div class="relative overflow-hidden w-full py-2 crawl-container my-[90px]">
+  <div
+    class="relative overflow-hidden w-full py-2 crawl-container my-[90px] z-10"
+  >
     <!-- Бегущая строка -->
     <div class="flex animate-marquee gap-20">
       <span

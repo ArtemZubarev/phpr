@@ -11,11 +11,11 @@
         <BenefitsContent :activeTab="tabs[activeIndex]" />
       </section>
     </BaseContainer>
-    <img
-      class="absolute w-full left-0 top-0"
+    <!-- <img
+      class="absolute w-full left-0 bottom-0"
       src="/assets/images/benefits-bg.png"
       alt=""
-    />
+    /> -->
   </div>
 </template>
 

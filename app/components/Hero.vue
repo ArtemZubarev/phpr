@@ -4,9 +4,10 @@
       class="hero bg-foreground rounded-xl mt-[50px] pt-[260px] pb-[260px]"
     >
       <div class="flex flex-col items-center justify-between">
-        <span class="sign rounded-md px-10 py-2 bg-background font-thin"
-          >The Future of Smart Blockchain Technology</span
-        >
+        <span
+          ref="textEl"
+          class="sign rounded-md px-10 py-2 bg-background font-thin"
+        ></span>
         <h1
           class="title text-white-gradient text-center text-title-xl leading-[96%] font-semibold mt-[50px]"
         >
@@ -32,6 +33,25 @@
     </section>
   </BaseContainer>
 </template>
+<script setup lang="ts">
+import { ref, onMounted } from "vue";
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
+
+gsap.registerPlugin(TextPlugin);
+
+const textEl = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  if (!textEl.value) return;
+
+  gsap.to(textEl.value, {
+    duration: 1, // общая длительность набора текста
+    text: "The Future of Smart Blockchain Technology",
+    ease: "none",
+  });
+});
+</script>
 <style scoped>
 .sign {
   border: 1px solid rgba(255, 255, 255, 0.55);

@@ -1,6 +1,8 @@
 <template>
   <BaseContainer>
-    <h2 class="text-title-xl text-white-background mb-[200px]">How It Works</h2>
+    <h2 class="text-title-xl text-white-background mb-[200px] text-center">
+      How It Works
+    </h2>
 
     <div class="flex justify-between flex-wrap gap-10">
       <div

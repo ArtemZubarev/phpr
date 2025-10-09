@@ -15,7 +15,9 @@
     <Benefits />
     <Unique />
     <Technology />
-    <div class="relative h-[2000px] bg-red"></div>
+    <Transparency />
+    <Ready />
+    <Footer />
     <!-- <NuxtRouteAnnouncer />
     <NuxtWelcome /> -->
   </div>

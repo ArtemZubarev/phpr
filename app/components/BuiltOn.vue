@@ -1,14 +1,26 @@
 <template>
   <BaseContainer>
-    <section class="mt-[117px]">
+    <section class="relative mt-[117px] z-20 overflow-hidden">
       <div
-        class="above relative bg-foreground rounded-xl pt-[82px] pb-[152px] px-[107px]"
+        class="above relative bg-foreground rounded-xl pt-[82px] pb-[152px] px-[107px] z-30"
       >
-        <img
+        <!-- <img
           class="absolute top-0 right-0 max-w-[605px]"
           src="/assets/images/venom.png"
           alt=""
+        /> -->
+        <img
+          ref="grid"
+          class="absolute top-0 right-0 max-w-[630px] z-1"
+          src="/assets/images/grid.png"
+          alt=""
         />
+        <img
+          class="absolute top-0 right-0 max-w-[505px] z-2"
+          src="/assets/images/venom-plus.png"
+          alt=""
+        />
+
         <h2 class="title text-white-gradient text-title-xl">Built on Venom</h2>
         <p class="text-text-md text-white mt-[24px] max-w-[780px]">
           Built on Venom (Layer-0), PHPR settles in seconds with tiny fees,
@@ -32,6 +44,7 @@
         </div>
       </div>
       <div
+        ref="below"
         class="below bg-[#fff] mt-[-70px] pt-[140px] pb-[80px] px-[107px] rounded-xl"
       >
         <h2 class="title text-background text-title-xl font-semibold">
@@ -56,6 +69,11 @@
 <script setup lang="ts">
 import FeatureCard from "@/components/FeatureCard.vue";
 import MeaningCard from "@/components/MeaningCard.vue";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { onMounted, ref } from "vue";
+import { gsap } from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const features = [
   {
@@ -87,4 +105,37 @@ const meanings = [
     text: "every token action is visible on-chain",
   },
 ];
+
+const below = ref<HTMLElement | null>(null);
+const grid = ref<HTMLImageElement | null>(null);
+
+onMounted(() => {
+  gsap.from(below.value, {
+    y: -100,
+    opacity: 0,
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: below.value,
+      start: "top 80%", // когда верх блока достигает 80% высоты экрана
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  gsap.fromTo(
+    grid.value,
+    { y: 120 },
+    {
+      y: 0,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: grid.value,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1.5, // плавная инерция
+      },
+      delay: 0.1,
+    }
+  );
+});
 </script>

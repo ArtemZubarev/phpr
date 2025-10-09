@@ -23,6 +23,7 @@ export default {
 
         "text-sm": "16px",
         "text-md": "22px",
+        "text-lg": "30px",
         menu: "16px",
       },
     },
