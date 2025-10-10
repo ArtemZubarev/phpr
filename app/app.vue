@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-background min-h-screen pt-10 text-white font-normal">
+  <div class="bg-background min-h-screen pt-4 md:pt-10 text-white font-normal">
     <Header />
     <Hero />
     <What />

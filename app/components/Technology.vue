@@ -1,12 +1,14 @@
 <template>
   <section ref="section" class="relative">
     <!-- Блок с прогрессбаром и слайдами -->
-    <div ref="block" class="w-full text-white py-10 px-6">
+    <div ref="block" class="w-full text-white py-10">
       <BaseContainer>
         <div
-          class="inner relative min-h-[600px] z-10 bg-foreground rounded-xl py-[82px] px-[107px]"
+          class="inner relative min-h-[500px] md:min-h-[600px] z-10 bg-foreground rounded-md md:rounded-xl py-[30px] px-[24px] md:py-[82px] md:px-[107px]"
         >
-          <h2 class="text-title-xl font-semibold mb-16">
+          <h2
+            class="text-title-sm md:text-title-xl font-semibold mb-16 leading-[120%]"
+          >
             Technology & Security
           </h2>
 
@@ -34,13 +36,15 @@
               v-for="(slide, i) in slides"
               :key="i"
               :class="{ block: step === i + 1, hidden: step !== i }"
-              class="transition-opacity duration-300 text-lg mb-2"
+              class="transition-opacity duration-300 mb-2"
             >
-              <p class="mt-[82px] text-title-sm font-semibold">
+              <p
+                class="mt-[55px] md:mt-[82px] text-title md:text-title-sm md:font-semibold leading-[120%]"
+              >
                 {{ slide.title }}
               </p>
               <p
-                class="mt-[23px] text-text-lg max-w-[820px] font-thin leading-[96%]"
+                class="mt-[23px] text-text md:text-text-lg max-w-[820px] font-thin md:leading-[96%]"
               >
                 {{ slide.text }}
               </p>
@@ -141,11 +145,17 @@ onMounted(() => {
   content: "";
   position: absolute;
   width: 6px;
-  height: 46px;
+  height: 26px;
   background-color: #2addc0; /* цвет черточки */
   left: 0px; /* позиция по горизонтали */
-  top: -20px;
+  top: -10px;
   border-radius: 1px;
   z-index: 8;
+}
+@media (min-width: 1024px) {
+  .progress-bar::before {
+    height: 46px;
+    top: -20px;
+  }
 }
 </style>

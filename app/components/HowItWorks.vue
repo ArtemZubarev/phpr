@@ -1,29 +1,33 @@
 <template>
   <BaseContainer>
-    <h2 class="text-title-xl text-white-background mb-[200px] text-center">
+    <h2
+      class="text-title-sm md:text-title-xl text-white-background mb-[50px] md:mb-[200px] text-center"
+    >
       How It Works
     </h2>
 
-    <div class="flex justify-between flex-wrap gap-10">
+    <div class="flex justify-between flex-col md:flex-row flex-wrap gap-10">
       <div
         v-for="(step, i) in steps"
         :key="i"
         class="block flex flex-col items-center max-w-[337px] flex-1"
       >
         <img
-          class="max-w-[279px] mx-auto"
+          class="max-w-[106px] md:max-w-[279px] mx-auto"
           :src="step.image"
           :alt="step.title"
         />
 
         <!-- Заголовок одинаковой высоты -->
         <p
-          class="title relative text-title-sm text-white-gradient mt-6 leading-[96%] font-semibold min-h-[3em] flex items-center justify-center"
+          class="title relative text-text-lg md:text-title-sm text-white-gradient mt-0 md:mt-6 leading-[96%] font-semibold min-h-[3em] flex items-center justify-center text-center md:text-left"
         >
           {{ step.title }}
         </p>
 
-        <p class="text-text-md mt-2">{{ step.text }}</p>
+        <p class="text-text md:text-text-md md:mt-2 text-center md:text-left">
+          {{ step.text }}
+        </p>
       </div>
     </div>
   </BaseContainer>
@@ -54,12 +58,14 @@ const steps = [
 </script>
 
 <style scoped>
-.block:not(:last-of-type) .title::after {
-  content: "";
-  position: absolute;
-  width: 159px;
-  background-image: url("/assets/images/line.svg");
-  height: 3px;
-  left: 100%;
+@media (min-width: 1024px) {
+  .block:not(:last-of-type) .title::after {
+    content: "";
+    position: absolute;
+    width: 159px;
+    background-image: url("/assets/images/line.svg");
+    height: 3px;
+    left: 100%;
+  }
 }
 </style>

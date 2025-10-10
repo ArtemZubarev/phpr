@@ -21,10 +21,13 @@ export default {
         "title-lg": "64px",
         "title-xl": "72px",
 
+        "text-xs": "12px",
         "text-sm": "16px",
         "text-md": "22px",
         "text-lg": "30px",
-        menu: "16px",
+
+        menu: "12px",
+        "menu-sm": "16px",
       },
     },
     borderRadius: {

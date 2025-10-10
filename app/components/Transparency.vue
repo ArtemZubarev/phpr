@@ -1,13 +1,15 @@
 <template>
   <div class="relative">
     <BaseContainer>
-      <section class="transparency z-10 pt-[200px]">
-        <h2 class="text-title-xl font-semibold mb-16">Transparency</h2>
+      <section class="transparency z-10 pt-[50px] md:pt-[200px]">
+        <h2 class="text-title-sm md:text-title-xl font-semibold mb-4 md:mb-16">
+          Transparency
+        </h2>
 
-        <div class="flex justify-between gap-[40px]">
+        <div class="flex flex-col md:flex-row justify-between gap-[40px]">
           <!-- Левая часть -->
           <div class="text max-w-[919px]">
-            <p class="text-[28px]">
+            <p class="text-[18px] md:text-[28px]">
               PHPR’s stability and trust come from full transparency. VBank
               publishes monthly proof-of-reserve reports and commissions
               independent audits. The smart contracts that mint and burn tokens
@@ -17,22 +19,22 @@
           </div>
 
           <!-- Вертикальный разделитель -->
-          <div class="w-[4px] bg-[#FFFFFF80]"></div>
+          <div class="hidden md:block w-[4px] bg-[#FFFFFF80]"></div>
 
           <!-- Правая часть -->
-          <div class="flex flex-col gap-[47px]">
+          <div class="flex flex-col gap-[20px] md:gap-[47px]">
             <div
               v-for="item in list"
               :key="item"
-              class="item flex gap-[28px]"
+              class="item flex items-center md:items-start gap-[14px] md:gap-[28px]"
               ref="itemsRef"
             >
               <img
-                class="w-[36px] h-[36px]"
+                class="w-[24px] h-[24px] md:w-[36px] md:h-[36px]"
                 src="/assets/images/tick.svg"
                 alt=""
               />
-              <p class="text-text-md">{{ item }}</p>
+              <p class="text-text md:text-text-md">{{ item }}</p>
             </div>
           </div>
         </div>

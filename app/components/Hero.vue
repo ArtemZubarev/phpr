@@ -1,30 +1,32 @@
 <template>
   <BaseContainer>
     <section
-      class="hero bg-foreground rounded-xl mt-[50px] pt-[260px] pb-[260px]"
+      class="hero bg-foreground rounded-lg md:rounded-xl mt-[20px] md:mt-[50px] px-[15px] pt-[40px] md:pt-[260px] pb-[60px] md:pb-[260px]"
     >
       <div class="flex flex-col items-center justify-between">
         <span
           ref="textEl"
-          class="sign rounded-md px-10 py-2 bg-background font-thin"
+          class="sign text-[10px] md:text-text-sm rounded-md px-4 md:px-10 md:mx-auto py-2 bg-background font-thin"
         ></span>
         <h1
-          class="title text-white-gradient text-center text-title-xl leading-[96%] font-semibold mt-[50px]"
+          class="title text-white-gradient text-center text-title md:text-title-xl leading-[110%] md:leading-[96%] font-semibold mt-[50px]"
         >
           PHPR - Licensed Digital <br />
           Peso for Quick Remittances
         </h1>
-        <h2 class="mt-[28px] text-[24px] text-whiteFaded font-light">
+        <h2
+          class="mt-[28px] text-[18px] text-center md:text-[24px] text-whiteFaded font-light"
+        >
           Send, receive, and withdraw Pesos instantly.
         </h2>
-        <div class="buttons flex gap-[25px] mt-[32px]">
+        <div class="buttons flex gap-[15px] md:gap-[25px] mt-[32px]">
           <button
-            class="bg-accent-gradient text-background px-9 py-4 rounded-sm hover:opacity-90 transition text-menu font-medium"
+            class="bg-accent-gradient text-background px-4 md:px-9 py-2 md:py-4 rounded-sm hover:opacity-90 transition text-menu font-medium"
           >
             Get started
           </button>
           <button
-            class="border-accent rounded-sm bg-[#2c2c2c] text-accent px-9 py-4 hover:opacity-90 transition text-menu font-medium"
+            class="border-accent rounded-sm bg-[#2c2c2c] text-accent px-4 md:px-9 py-2 md:py-4 hover:opacity-90 transition text-menu font-medium"
           >
             White Paper
           </button>

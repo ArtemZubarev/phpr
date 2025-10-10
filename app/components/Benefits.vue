@@ -2,9 +2,11 @@
   <div class="relative">
     <BaseContainer>
       <section
-        class="relative z-10 benefits bg-[#f3f3f3] rounded-xl py-[70px] px-[100px]"
+        class="relative z-10 benefits bg-[#f3f3f3] rounded-md md:rounded-xl py-[40px] md:py-[70px] px-[25px] md:px-[100px]"
       >
-        <h2 class="text-title-xl text-background font-semibold">
+        <h2
+          class="text-title-sm md:text-title-xl text-background font-semibold leading-[120%] md:leading-[unset]"
+        >
           Who Benefits?
         </h2>
         <BenefitsSwitcher :tabs="tabs" v-model="activeIndex" />

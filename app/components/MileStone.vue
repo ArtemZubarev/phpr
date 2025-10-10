@@ -1,6 +1,6 @@
 <template>
   <div
-    class="milestone text-accent flex justify-center items-center w-[48px] h-[48px] rounded-[50%] top-[-21px] absolute z-10 overflow-hidden"
+    class="milestone text-accent flex justify-center items-center w-[48px] h-[48px] rounded-[50%] top-[-21px] absolute z-10 overflow-hidden scale-50 md:scale-100 translate-x-[-43%] md:translate-x-0"
     :style="{ left: `${progress}%` }"
     :class="active ? 'bg-accent' : 'bg-[#3D3D3D]'"
   >

@@ -1,37 +1,45 @@
 <template>
   <div class="relative">
     <BaseContainer>
-      <section class="unique relative z-10 pt-[130px] pb-[160px]">
+      <section
+        class="unique relative z-10 pt-[60px] md:pt-[130px] pb-[40px] md:pb-[160px]"
+      >
         <h2
-          class="text-title-xl text-center text-white-background font-semibold"
+          class="text-title-sm md:text-title-xl text-center text-white-background font-semibold"
         >
           Why It’s Unique
         </h2>
         <div class="flex justify-center">
           <div
-            class="relative mt-[34px] mb-[50px] text-title px-6 py-3 rounded-xl font-medium transition duration-300 bg-tab-border text-mainFaded hover:text-main hover:bg-foreground/40"
+            class="relative mt-[34px] mb-[50px] text-[12px] md:text-text-sm rounded-md px-4 md:px-10 py-3 rounded-xl text-center font-medium transition duration-300 bg-tab-border text-mainFaded hover:text-main hover:bg-foreground/40"
           >
             <span class="text-accent-gradient">
               Unlike stablecoins or speculative tokens, PHPR is:
             </span>
           </div>
         </div>
-        <div class="flex justify-between gap-[28px]">
+        <div
+          class="flex flex-col md:flex-row flex-col justify-between gap-[28px]"
+        >
           <div
             v-for="(block, i) in blocks"
             :key="i"
             ref="animatedBlocks"
-            class="block bg-[#F3F3F3] rounded-xl max-[489px] w-full py-[30px] pl-[43px] pr-[24px]"
+            class="block bg-[#F3F3F3] rounded-md md:rounded-xl max-[489px] w-full py-[30px] pl-[25px] pr-[12px] md:pl-[43px] md:pr-[24px]"
           >
             <img
-              class="mb-[24px] w-[43px] h-[43px]"
+              class="mb-[12px] md:mb-[24px] w-[43px] h-[43px]"
               :src="block.image"
               alt=""
             />
-            <h3 class="text-title-sm text-background mb-[9px]">
+            <h3
+              class="text-title md:text-title-sm text-background mb-[9px] leading-[120%]"
+            >
               {{ block.title }}
             </h3>
-            <p class="text-text-md text-background">{{ block.text }}</p>
+            <p class="text-text-md md:text-text-md text-background">
+              {{ block.text }}
+            </p>
           </div>
         </div>
       </section>

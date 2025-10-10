@@ -1,8 +1,8 @@
 <template>
   <BaseContainer>
-    <section class="relative mt-[117px] z-20 overflow-hidden">
+    <section class="relative mt-[57px] md:mt-[117px] z-20 overflow-hidden">
       <div
-        class="above relative bg-foreground rounded-xl pt-[82px] pb-[152px] px-[107px] z-30"
+        class="above relative bg-foreground rounded-md md:rounded-xl pt-[32px] md:pt-[82px] pb-[52px] md:pb-[152px] px-[25px] md:px-[107px] z-30"
       >
         <!-- <img
           class="absolute top-0 right-0 max-w-[605px]"
@@ -11,29 +11,35 @@
         /> -->
         <img
           ref="grid"
-          class="absolute top-0 right-0 max-w-[630px] z-1"
+          class="absolute top-0 right-0 md:max-w-[630px] z-1"
           src="/assets/images/grid.png"
           alt=""
         />
         <img
-          class="absolute top-0 right-0 max-w-[505px] z-2"
+          class="absolute top-0 right-0 max-w-[205px] md:max-w-[505px] z-2"
           src="/assets/images/venom-plus.png"
           alt=""
         />
 
-        <h2 class="title text-white-gradient text-title-xl">Built on Venom</h2>
-        <p class="text-text-md text-white mt-[24px] max-w-[780px]">
+        <h2
+          class="title relative z-10 text-white-gradient text-title-sm md:text-title-xl"
+        >
+          Built on Venom
+        </h2>
+        <p
+          class="relative z-10 text-text-sm md:text-text-md text-white mt-[24px] max-w-[780px]"
+        >
           Built on Venom (Layer-0), PHPR settles in seconds with tiny fees,
           on-chain mint/burn transparency, and PoS+BFT security - speed, cost,
           and transparency traditional money transfers can’t match.
         </p>
         <img
-          class="max-w-[350px] mt-[50px]"
+          class="max-w-[220px] md:max-w-[350px] mt-[50px]"
           src="/assets/images/bro.png"
           alt=""
         />
         <div
-          class="border-t border-white mt-[66px] pt-[66px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[10%]"
+          class="border-t border-white mt-[36px] md:mt-[66px] pt-[26px] md:pt-[66px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[0] md:gap-[10%]"
         >
           <FeatureCard
             v-for="(feature, i) in features"
@@ -45,14 +51,18 @@
       </div>
       <div
         ref="below"
-        class="below bg-[#fff] mt-[-70px] pt-[140px] pb-[80px] px-[107px] rounded-xl"
+        class="below bg-[#fff] mt-[-70px] pt-[110px] md:pt-[140px] pb-[50px] px-[25px] md:px-[107px] rounded-md md:rounded-xl"
       >
-        <h2 class="title text-background text-title-xl font-semibold">
+        <h2
+          class="title text-background text-title-sm md:text-title-xl font-semibold leading-[106%]"
+        >
           What this means for users:
         </h2>
-        <div class="relative flex justify-between gap-[10%] mt-[30px]">
+        <div
+          class="relative flex flex-col md:flex-row justify-between md:gap-[10%] mt-[10px] md:mt-[30px]"
+        >
           <div
-            class="line absolute w-full top-[42px] h-[1px] bg-background"
+            class="line hidden md:block absolute w-full top-[42px] h-[1px] bg-background"
           ></div>
           <MeaningCard
             v-for="(meaning, i) in meanings"

@@ -1,6 +1,8 @@
 <template>
   <div class="mt-10 min-h-[200px] rounded-xl transition-all">
-    <p class="text-background text-title-xl leading-[113%] font-semibold">
+    <p
+      class="text-background text-title-sm md:text-title-xl font-semibold leading-[113%]"
+    >
       {{ activeTab.text }}
     </p>
   </div>

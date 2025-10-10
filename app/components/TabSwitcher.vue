@@ -1,12 +1,12 @@
 <template>
   <div
-    class="flex justify-between gap-4 border-b-[3px] border-white/40 pb-[32px]"
+    class="flex flex-wrap md:flex-nowrap md:flex-row md:justify-between gap-2 md:gap-4 border-b-[3px] border-white/40 pb-[32px]"
   >
     <button
       v-for="(tab, i) in tabs"
       :key="i"
       @click="$emit('update:modelValue', i)"
-      class="button relative px-6 py-3 rounded-lg font-medium transition duration-300 w-full max-w-[245px]"
+      class="button relative px-3 py-2 md:px-6 md:py-3 rounded-lg font-regular transition duration-300 md:w-full max-w-[245px]"
       :class="
         modelValue === i
           ? 'bg-accent-gradient text-background border border-transparent'
@@ -21,7 +21,7 @@
 
       <!-- Полоска под кнопкой -->
       <span
-        class="absolute left-0 bottom-[-36px] w-full h-[3px] rounded-full transition-all duration-300"
+        class="absolute hidden md: block left-0 bottom-[-36px] w-full h-[3px] rounded-full transition-all duration-300"
         :class="modelValue === i ? 'bg-accent' : 'bg-transparent'"
       ></span>
     </button>

@@ -1,12 +1,12 @@
 <template>
   <div
-    class="flex mt-10 justify-between gap-4 border-b-[3px] border-[#E0E0E0] pb-[32px]"
+    class="flex flex-col md:flex-row mt-10 justify-between gap-2 md:gap-4 border-b-[3px] border-[#E0E0E0] pb-[32px]"
   >
     <button
       v-for="(tab, i) in tabs"
       :key="i"
       @click="$emit('update:modelValue', i)"
-      class="button relative px-6 py-3 rounded-lg font-medium transition duration-300 w-full max-w-[245px]"
+      class="button relative px-3 py-2 md:px-6 md:py-3 rounded-lg font-medium transition duration-300 w-full max-w-[245px]"
       :class="
         modelValue === i
           ? 'bg-accent text-background border border-transparent'

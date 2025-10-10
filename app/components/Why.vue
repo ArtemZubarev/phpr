@@ -1,8 +1,10 @@
 <template>
   <div class="relative">
     <BaseContainer>
-      <section class="relative why pt-[230px] pb-[150px] z-10">
-        <h2 class="text-title-xl text-white-gradient mb-10">Why PHPR?</h2>
+      <section class="relative why pt-[60px] md:pt-[230px] pb-[150px] z-10">
+        <h2 class="text-title-sm md:text-title-xl text-white-gradient mb-10">
+          Why PHPR?
+        </h2>
 
         <!-- Компонент переключения -->
         <TabsSwitcher v-model="activeIndex" :tabs="tabs" />
@@ -14,19 +16,19 @@
 
     <img
       ref="img1"
-      class="absolute right-0 bottom-[-150px] w-[402px]"
+      class="absolute opacity-70 md:opacity-100 right-0 bottom-[-150px] w-[402px]"
       src="/assets/images/1.png"
       alt=""
     />
     <img
       ref="img2"
-      class="absolute left-0 top-0 w-[252px]"
+      class="absolute opacity-50 md:opacity-100 left-0 top-0 w-[252px]"
       src="/assets/images/2.png"
       alt=""
     />
     <img
       ref="img3"
-      class="absolute right-[20%] top-[-80px] w-[252px]"
+      class="absolute opacity-40 md:opacity-100 right-[20%] top-[-80px] w-[252px]"
       src="/assets/images/3.png"
       alt=""
     />
