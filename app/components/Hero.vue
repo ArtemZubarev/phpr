@@ -1,9 +1,10 @@
 <template>
   <BaseContainer>
     <section
-      class="hero bg-foreground rounded-lg md:rounded-xl mt-[20px] md:mt-[50px] px-[15px] pt-[40px] md:pt-[260px] pb-[60px] md:pb-[260px]"
+      class="hero relative bg-foreground rounded-lg md:rounded-xl mt-[20px] md:mt-[50px] px-[15px] pt-[40px] md:pt-[260px] pb-[60px] md:pb-[260px]"
     >
-      <div class="flex flex-col items-center justify-between">
+      <HeroBg />
+      <div class="relative flex flex-col items-center justify-between z-20">
         <span
           ref="textEl"
           class="sign text-[10px] md:text-text-sm rounded-md px-4 md:px-10 md:mx-auto py-2 bg-background font-thin"
@@ -32,6 +33,7 @@
           </button>
         </div>
       </div>
+      <Glowing class="bottom-[5%]" />
     </section>
   </BaseContainer>
 </template>

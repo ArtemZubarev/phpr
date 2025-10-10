@@ -48,6 +48,7 @@
             :text="feature.text"
           />
         </div>
+        <Decor class="right-[96px] bottom-[70px]" />
       </div>
       <div
         ref="below"
