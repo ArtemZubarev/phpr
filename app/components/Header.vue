@@ -1,7 +1,7 @@
 <template>
   <BaseContainer>
     <header
-      class="header px-6 lg:px-10 py-4 bg-foreground/70 text-white rounded-md md:rounded-lg border-white-10 flex items-center justify-between backdrop-blur-[30px] relative"
+      class="header px-6 lg:px-10 py-4 bg-foreground/70 text-white rounded-md md:rounded-lg border-white-10 flex items-center justify-between backdrop-blur-[30px] relative z-[100]"
     >
       <!-- Лого -->
       <div class="flex-shrink-0">
@@ -59,7 +59,7 @@
       <transition name="slide-fade">
         <nav
           v-if="isOpen"
-          class="absolute top-full mt-[10px] rounded-t-md left-0 w-full bg-foreground/95 backdrop-blur-xl rounded-b-lg flex flex-col items-center py-6 text-whiteFaded font-medium gap-4 z-50"
+          class="absolute top-full mt-[10px] rounded-t-md left-0 w-full bg-foreground/95 backdrop-blur-xl rounded-b-lg flex flex-col items-center py-6 text-whiteFaded font-medium gap-4 z-[1000]"
         >
           <template v-for="(item, index) in menuItems" :key="index">
             <a :href="item.href" class="text-menu-sm" @click="closeMenu">{{

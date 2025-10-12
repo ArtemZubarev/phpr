@@ -1,5 +1,5 @@
 <template>
-  <section ref="section" class="relative">
+  <section id="technology-security" ref="section" class="relative">
     <!-- Блок с прогрессбаром и слайдами -->
     <div ref="block" class="w-full text-white py-10">
       <BaseContainer>

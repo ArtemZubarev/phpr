@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div id="how-it-works" class="relative">
     <BaseContainer>
       <GlowingTwo class="top-[5%] md:top-[12%]" />
       <div class="relative z-20">

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div id="why-phpr" class="relative">
     <BaseContainer>
       <section class="relative why pt-[60px] md:pt-[230px] pb-[150px] z-10">
         <h2 class="text-title-sm md:text-title-xl text-white-gradient mb-10">

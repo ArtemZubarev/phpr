@@ -1,6 +1,6 @@
 <template>
   <BaseContainer>
-    <section class="what mt-[60px] md:mt-[85px]">
+    <section id="phpr" class="what mt-[60px] md:mt-[85px]">
       <h2 class="text-white-gradient text-title md:text-title-xl font-semibold">
         What is PHPR?
       </h2>
