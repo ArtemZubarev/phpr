@@ -19,7 +19,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex-row flex-col justify-between gap-[28px]"
+          class="flex flex-col lg:flex-row flex-col justify-between gap-[28px]"
         >
           <div
             v-for="(block, i) in blocks"

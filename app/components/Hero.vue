@@ -33,7 +33,7 @@
           </button>
         </div>
       </div>
-      <Glowing class="bottom-[5%]" />
+      <Glowing class="bottom-[2%] md:bottom-[5%]" />
     </section>
   </BaseContainer>
 </template>

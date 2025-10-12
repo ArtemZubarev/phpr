@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col md:flex-row mt-10 justify-between gap-2 md:gap-4 border-b-[3px] border-[#E0E0E0] pb-[32px]"
+    class="flex flex-col items-center lg:flex-row mt-10 justify-between gap-2 md:gap-4 border-b-[3px] border-[#E0E0E0] pb-[32px]"
   >
     <button
       v-for="(tab, i) in tabs"

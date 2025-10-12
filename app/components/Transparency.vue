@@ -6,9 +6,11 @@
           Transparency
         </h2>
 
-        <div class="flex flex-col md:flex-row justify-between gap-[40px]">
+        <div
+          class="flex flex-col lg:flex-row justify-between gap-[20px] lg:gap-[40px]"
+        >
           <!-- Левая часть -->
-          <div class="text max-w-[919px]">
+          <div class="text max-w-[700px] xl:max-w-[919px]">
             <p class="text-[18px] md:text-[28px]">
               PHPR’s stability and trust come from full transparency. VBank
               publishes monthly proof-of-reserve reports and commissions

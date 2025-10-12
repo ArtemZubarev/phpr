@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-wrap md:flex-nowrap md:flex-row md:justify-between gap-2 md:gap-4 border-b-[3px] border-white/40 pb-[32px]"
+    class="flex flex-wrap lg:flex-nowrap lg:flex-row md:justify-between gap-2 md:gap-4 border-b-[3px] border-white/40 pb-[32px]"
   >
     <button
       v-for="(tab, i) in tabs"
