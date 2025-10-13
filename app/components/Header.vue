@@ -14,14 +14,19 @@
 
       <!-- Десктопное меню -->
       <nav
-        class="hidden lg:flex items-center text-whiteFaded font-medium gap-6 transition-all"
+        class="hidden lg:flex items-center text-whiteFaded font-medium gap-2 xl:gap-6 transition-all"
       >
         <template v-for="(item, index) in menuItems" :key="index">
-          <a ref="menuRefs" :href="item.href">{{ item.name }}</a>
+          <a
+            ref="menuRefs "
+            class="sm:text-menu lg:text-text-sm"
+            :href="item.href"
+            >{{ item.name }}</a
+          >
           <img
             v-if="index < menuItems.length - 1"
             src="/assets/images/arrow.svg"
-            class="mx-2 w-[16px] h-[16px] mt-[1px]"
+            class="md:mx-1 w-[16px] h-[16px] mt-[1px]"
             alt=""
             ref="menuRefs"
           />
