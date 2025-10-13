@@ -21,7 +21,7 @@
 
       <!-- Полоска под кнопкой -->
       <span
-        class="absolute hidden md: block left-0 bottom-[-36px] w-full h-[3px] rounded-full transition-all duration-300"
+        class="absolute hidden md:block left-0 bottom-[-36px] w-full h-[3px] rounded-full transition-all duration-300"
         :class="modelValue === i ? 'bg-accent' : 'bg-transparent'"
       ></span>
     </button>

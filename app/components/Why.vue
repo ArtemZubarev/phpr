@@ -51,7 +51,7 @@ const img3 = ref<HTMLImageElement | null>(null);
 const tabs = [
   {
     title: "Always ₱1",
-    text: "PHPR - Licensed Digital Peso for Quick Remittances",
+    text: "PHPR - Digital Peso for Quick Remittances",
   },
   {
     title: "Fast & Low-Cost",

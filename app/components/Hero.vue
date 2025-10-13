@@ -1,7 +1,7 @@
 <template>
   <BaseContainer>
     <section
-      class="hero relative bg-foreground rounded-lg md:rounded-xl mt-[20px] md:mt-[50px] px-[15px] pt-[40px] md:pt-[260px] pb-[60px] md:pb-[260px]"
+      class="hero relative bg-foreground rounded-lg md:rounded-xl mt-[20px] md:mt-[50px] px-[15px] pt-[40px] md:pt-[260px] pb-[90px] md:pb-[260px]"
     >
       <HeroBg />
       <div class="relative flex flex-col items-center justify-between z-20">
@@ -10,15 +10,16 @@
           class="sign text-[10px] md:text-text-sm rounded-md px-4 md:px-10 md:mx-auto py-2 bg-background font-thin"
         ></span>
         <h1
-          class="title text-white-gradient text-center text-title md:text-title-xl leading-[110%] md:leading-[96%] font-semibold mt-[50px]"
+          class="title text-white-gradient text-center text-title md:text-title-xl leading-[110%] md:leading-[96%] font-semibold mt-[150px] md:mt-[50px]"
         >
-          PHPR - Licensed Digital <br />
+          PHPR - Digital <br />
           Peso for Quick Remittances
         </h1>
         <h2
-          class="mt-[28px] text-[18px] text-center md:text-[24px] text-whiteFaded font-light"
+          class="mt-[14px] md:mt-[28px] text-[18px] text-center md:text-[24px] text-whiteFaded font-light"
         >
-          Send, receive, and withdraw Pesos instantly.
+          Send, receive, and withdraw <br class="md:hidden" />
+          Pesos instantly.
         </h2>
         <div class="buttons flex gap-[15px] md:gap-[25px] mt-[32px]">
           <button
@@ -33,7 +34,7 @@
           </button>
         </div>
       </div>
-      <Glowing class="bottom-[2%] md:bottom-[5%]" />
+      <Glowing class="bottom-[4%] md:bottom-[5%]" />
     </section>
   </BaseContainer>
 </template>

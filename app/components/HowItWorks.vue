@@ -55,8 +55,8 @@ const steps = [
   },
   {
     image: engine,
-    title: "Family in PH receives PHPR",
-    text: "instantly in their VExchange or partner wallet",
+    title: "Recipient in PH receives PHPR ",
+    text: "instantly in their Top Wallet or partner wallet.",
   },
   {
     image: box,
@@ -67,7 +67,17 @@ const steps = [
 </script>
 
 <style scoped>
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
+  .block:not(:last-of-type) .title::after {
+    content: "";
+    position: absolute;
+    width: 89px;
+    background-image: url("/assets/images/line.svg");
+    height: 3px;
+    left: 100%;
+  }
+} */
+@media (min-width: 1296px) {
   .block:not(:last-of-type) .title::after {
     content: "";
     position: absolute;

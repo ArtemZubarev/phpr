@@ -9,7 +9,7 @@
         Ready to experience seamless remittances and digital payments?
       </h2>
       <ul
-        class="relative list text-background mt-[60px] max-w-[700px] pl-[25px] md:pl-[42px] pr-[25px] z-10"
+        class="relative list text-background mt-[60px] max-w-[700px] pl-[25px] mb-[300px] mb-0 md:pl-[42px] pr-[25px] z-10"
       >
         <li class="item text-[18px] md:text-[28px] mb-[20px]">
           <b>Download the VExchange Wallet </b>to start sending and receiving
@@ -24,7 +24,7 @@
         </li>
       </ul>
       <img
-        class="absolute hidden md:block right-0 bottom-0 w-[45%]"
+        class="absolute md:block right-0 bottom-0 sm:w-[45%]"
         src="/assets/images/phone.png"
         alt=""
       />
@@ -38,6 +38,17 @@
 .item {
   position: relative;
 }
+.list:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-image: url("/assets/images/line-v.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 5px;
+  top: 20px;
+}
 .item::before {
   content: "";
   position: absolute;
@@ -47,9 +58,18 @@
   left: -25px;
   top: 14px;
 }
+
+@media (min-width: 768px) {
+  .list:before {
+    left: 22.5px;
+  }
+}
 @media (min-width: 1024px) {
   .item::before {
     left: -35px;
+  }
+  .list:before {
+    left: 12.5px;
   }
 }
 </style>
