@@ -20,7 +20,7 @@
           <p
             class="text-[12px] md:text-[14px] mt-[16px] md:mt-[35px] text-[#9FA0A2] font-light"
           >
-            Vxchange ©2023 All Rights Reserved
+            Open Pay ©2023 All Rights Reserved
           </p>
         </div>
         <div class="mt-10 md: mt-0">

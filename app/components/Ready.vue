@@ -4,7 +4,7 @@
       class="ready relative rounded-xl bg-ready-gradient py-[48px] md:py-[98px] pl-[25px] md:pl-[104px] mt-[60px] md:mt-[143px] overflow-hidden"
     >
       <h2
-        class="relative text-title md:text-title-sm text-background max-w-[700px] font-semibold leading-[120%] z-10"
+        class="relative text-text-lg md:text-title-sm text-background max-w-[700px] pr-[25px] md:pr-[unset] font-semibold leading-[120%] z-10"
       >
         Ready to experience seamless remittances and digital payments?
       </h2>
@@ -56,12 +56,15 @@
   height: 13px;
   background-image: url("/assets/images/ellipse.svg");
   left: -25px;
-  top: 14px;
+  top: 7px;
 }
 
 @media (min-width: 768px) {
   .list:before {
     left: 22.5px;
+  }
+  .item::before {
+    top: 14px;
   }
 }
 @media (min-width: 1024px) {
