@@ -48,6 +48,7 @@
   background-size: cover;
   left: 5px;
   top: 20px;
+  display: none;
 }
 .item::before {
   content: "";
@@ -73,6 +74,7 @@
   }
   .list:before {
     left: 12.5px;
+    display: block;
   }
 }
 </style>
