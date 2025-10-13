@@ -7,7 +7,7 @@
       <p class="text-[18px] mt-[20px] md:text-[28px]">
         PHPR (PHP Remit) is a digital representation of the Philippine Peso,
         <br />
-        issued on the Venom Blockchain and traded on VExchange.
+        issued on the Venom Blockchain and traded on Topwallet.
       </p>
       <div class="flex flex-col md:flex-row gap-[20px] mt-[60px]">
         <div

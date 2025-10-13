@@ -105,7 +105,7 @@ const features = [
   },
   {
     title: "Remittance-ready UX ",
-    text: "Works with common wallets; listed on VExchange for easy access and liquidity.",
+    text: "Works with common wallets; listed on Topwallet for easy access and liquidity.",
   },
 ];
 const meanings = [

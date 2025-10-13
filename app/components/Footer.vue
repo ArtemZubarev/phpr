@@ -49,7 +49,7 @@
           <p class="text-text-lg">Use PHPR with</p>
           <img
             class="w-[127px] mt-[4px] block mx-auto md:mx-[unset]"
-            src="/assets/images/xch.png"
+            src="/assets/images/topwallet.png"
             alt=""
           />
           <img

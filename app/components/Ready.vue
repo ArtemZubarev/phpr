@@ -1,19 +1,19 @@
 <template>
   <BaseContainer>
     <section
-      class="ready relative rounded-xl bg-ready-gradient py-[48px] md:py-[98px] pl-[25px] md:pl-[104px] mt-[143px] overflow-hidden"
+      class="ready relative rounded-xl bg-ready-gradient py-[48px] md:py-[98px] pl-[25px] md:pl-[104px] mt-[60px] md:mt-[143px] overflow-hidden"
     >
       <h2
-        class="relative text-title-sm text-background max-w-[700px] font-semibold leading-[120%] z-10"
+        class="relative text-title md:text-title-sm text-background max-w-[700px] font-semibold leading-[120%] z-10"
       >
         Ready to experience seamless remittances and digital payments?
       </h2>
       <ul
-        class="relative list text-background mt-[60px] max-w-[700px] pl-[25px] mb-[300px] mb-0 md:pl-[42px] pr-[25px] z-10"
+        class="relative list text-background mt-[20px] md:mt-[60px] max-w-[700px] pl-[25px] mb-[260px] sm:mb-0 md:pl-[42px] pr-[25px] z-10"
       >
         <li class="item text-[18px] md:text-[28px] mb-[20px]">
-          <b>Download the VExchange Wallet </b>to start sending and receiving
-          PHPR today.
+          <b>Download the Topwallet </b>to start sending and receiving PHPR
+          today.
         </li>
         <li class="item text-[18px] md:text-[28px] mb-[20px]">
           Explore our <b>White Paper</b> to learn more about the technology and
@@ -24,7 +24,7 @@
         </li>
       </ul>
       <img
-        class="absolute md:block right-0 bottom-0 sm:w-[45%]"
+        class="absolute md:block right-0 bottom-0 w-[320px] sm:w-[45%]"
         src="/assets/images/phone.png"
         alt=""
       />
