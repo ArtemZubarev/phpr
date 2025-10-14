@@ -22,16 +22,20 @@
           Pesos instantly.
         </h2>
         <div class="buttons flex gap-[15px] md:gap-[25px] mt-[32px]">
-          <button
-            class="bg-accent-gradient text-background px-4 md:px-9 py-2 md:py-4 rounded-sm hover:opacity-90 transition text-menu font-medium"
+          <a
+            target="_blank"
+            href="https://topwallet.ph/"
+            class="bg-accent-gradient flex items-center text-background px-4 md:px-9 py-2 md:py-4 rounded-sm hover:opacity-90 transition text-menu font-medium"
           >
             Get started
-          </button>
-          <button
-            class="border-accent rounded-sm bg-[#2c2c2c] text-accent px-4 md:px-9 py-2 md:py-4 hover:opacity-90 transition text-menu font-medium"
+          </a>
+          <a
+            href="/Whitepaper-PHPR.pdf"
+            target="_blank"
+            class="border-accent flex items-center rounded-sm bg-[#2c2c2c] text-accent px-4 md:px-9 py-2 md:py-4 hover:opacity-90 transition text-menu font-medium"
           >
             White Paper
-          </button>
+          </a>
         </div>
       </div>
       <Glowing class="bottom-[4%] md:bottom-[5%]" />

@@ -53,12 +53,14 @@
       </button>
 
       <!-- Кнопка справа -->
-      <button
+      <a
+        target="_blank"
+        href="https://topwallet.ph/"
         ref="btnRef"
         class="hidden lg:block bg-accent text-background px-7 py-3 rounded-md text-menu-sm font-medium transition-transform transition-opacity duration-300 ease-out hover:opacity-90 hover:scale-[1.12]"
       >
         Get Started
-      </button>
+      </a>
 
       <!-- Выпадающее мобильное меню -->
       <transition name="slide-fade">
@@ -71,12 +73,14 @@
               item.name
             }}</a>
           </template>
-          <button
+          <a
+            target="_blank"
+            href="https://topwallet.ph/"
             class="bg-accent text-background px-6 py-2 rounded-md text-menu font-medium hover:opacity-90 transition"
             @click="closeMenu"
           >
             Get Started
-          </button>
+          </a>
         </nav>
       </transition>
     </header>

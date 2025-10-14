@@ -22,15 +22,28 @@
           >
             Open Pay ©2023 All Rights Reserved
           </p>
+          <a
+            href="https://openpay.digital/"
+            target="_blank"
+            class="block mx-auto md:mx-[unset]"
+          >
+            <img
+              class="w-[116px] mt-[13px]"
+              src="/assets/images/openBtn.png"
+              alt=""
+            />
+          </a>
         </div>
         <div class="mt-10 md: mt-0">
           <p class="text-text-md">Documents</p>
           <div
             class="flex flex-col mt-[16px] md:mt-[34px] gap-[6px] md:gap-[16px]"
           >
-            <a class="font-light" href="">White Paper</a>
+            <a class="font-light" href="/Whitepaper-PHPR.pdf" target="_blank"
+              >White Paper</a
+            >
             <a class="font-light" href="">Privacy Policy</a>
-            <a class="font-light" href="">AML</a>
+            <a class="font-light" href="">Terms & Conditions</a>
           </div>
         </div>
         <div class="mt-10 md: mt-0">
@@ -38,30 +51,49 @@
           <div
             class="flex flex-col mt-[16px] md:mt-[34px] gap-[6px] md:gap-[16px]"
           >
-            <a class="font-light" href="">Home</a>
-            <a class="font-light" href="">PHPR</a>
-            <a class="font-light" href="">Why PHPR?</a>
-            <a class="font-light" href="">How It Works</a>
-            <a class="font-light" href="">Technology & Security</a>
+            <a class="font-light" href="/">Home</a>
+            <a class="font-light" href="#phpr">PHPR</a>
+            <a class="font-light" href="#why-phpr">Why PHPR?</a>
+            <a class="font-light" href="#how-it-works">How It Works</a>
+            <a class="font-light" href="#technology-security"
+              >Technology & Security</a
+            >
           </div>
         </div>
         <div class="mt-10 md: mt-0 text-center">
           <p class="text-text-lg">Use PHPR with</p>
-          <img
-            class="w-[127px] mt-[4px] block mx-auto md:mx-[unset]"
-            src="/assets/images/topwallet.png"
-            alt=""
-          />
-          <img
-            class="w-[132px] mt-[24px] block mx-auto md:mx-[unset]"
-            src="/assets/images/goo.png"
-            alt=""
-          />
-          <img
-            class="w-[132px] mt-[13px] block mx-auto md:mx-[unset]"
-            src="/assets/images/app.png"
-            alt=""
-          />
+          <a
+            href="https://topwallet.ph/"
+            class="block mx-auto md:mx-[unset] flex justify-center md:justify-start"
+          >
+            <img
+              class="w-[127px] mt-[4px]"
+              src="/assets/images/topwallet.png"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=ph.topwallet&pcampaignid=web_share"
+            target="_blank"
+            class="block mx-auto md:mx-[unset] flex justify-center md:justify-start"
+          >
+            <img
+              class="w-[132px] mt-[24px]"
+              src="/assets/images/goo.png"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://apps.apple.com/ru/app/topwallet/id6444816148"
+            target="_blank"
+            class="block mx-auto md:mx-[unset] flex justify-center md:justify-start"
+          >
+            <img
+              class="w-[132px] mt-[13px]"
+              src="/assets/images/app.png"
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </BaseContainer>
