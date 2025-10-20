@@ -11,11 +11,14 @@
       </p>
       <div class="flex flex-col md:flex-row gap-[20px] mt-[60px]">
         <div
-          class="flex-1 flex md:justify-center items-center gap-[10%] bg-foreground px-6 py-2 md:py-6 rounded-md md:rounded-xl text-white md:text-center"
+          class="flex-1 flex md:justify-start items-center gap-[6%] bg-foreground px-0 md:px-6 py-2 md:py-4 rounded-md md:rounded-xl text-white md:text-center"
         >
-          <span class="text-white-gradient text-title-md md:text-title-xl"
-            >1:1</span
-          >
+          <span class="text-white-gradient text-title-md md:text-title-xl">
+            <img
+              class="max-w-[80px] md:max-w-[133px]"
+              src="/assets/images/coin.png"
+              alt=""
+          /></span>
           <span class="text-text-sm md:text-text-md text-white"
             >Each PHPR = ₱1</span
           >
