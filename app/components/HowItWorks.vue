@@ -55,13 +55,13 @@ const steps = [
   },
   {
     image: engine,
-    title: "Recipient in PH receives PHPR ",
-    text: "instantly in their Top Wallet or partner wallet.",
+    title: "The recipient in PH receives PHPR",
+    text: "instantly in their Topwallet or a partner wallet.",
   },
   {
     image: box,
     title: "Redeem for PHP",
-    text: "at face value through VBank or payout partners",
+    text: "at face value through VBank or payout partners.",
   },
 ];
 </script>

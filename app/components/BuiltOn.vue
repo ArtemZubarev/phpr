@@ -29,7 +29,7 @@
         <p
           class="relative z-10 text-text-sm md:text-text-md text-white mt-[24px] max-w-[780px]"
         >
-          Built on Venom (Layer-0), PHPR settles in seconds with tiny fees,
+          Built on Venom (Layer-1), PHPR settles in seconds with tiny fees,
           on-chain mint/burn transparency, and PoS+BFT security - speed, cost,
           and transparency traditional money transfers can’t match.
         </p>
@@ -57,7 +57,7 @@
         <h2
           class="title text-background text-title-sm md:text-title-xl font-semibold leading-[106%]"
         >
-          What this means for users:
+          What Does This Mean For Users?
         </h2>
         <div
           class="relative flex flex-col md:flex-row justify-between md:gap-[10%] mt-[10px] md:mt-[30px]"
@@ -88,7 +88,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const features = [
   {
-    title: "Layer-0 scale",
+    title: "Layer-1 scale",
     text: "Parallel processing (sharding) for high throughput and fast finality.",
   },
   {
@@ -109,11 +109,11 @@ const features = [
   },
 ];
 const meanings = [
-  { title: "Faster transfers", text: "seconds, not days" },
-  { title: "Lower costs", text: "keep more of every remittance" },
+  { title: "Faster transfers", text: "take seconds instead of days." },
+  { title: "Lower costs", text: "keep more of every remittance." },
   {
     title: "Clear trust signals",
-    text: "every token action is visible on-chain",
+    text: "grant that every token action is visible on-chain.",
   },
 ];
 

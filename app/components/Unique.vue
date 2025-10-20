@@ -7,7 +7,7 @@
         <h2
           class="text-title-sm md:text-title-xl text-center text-white-background font-semibold"
         >
-          Why It’s Unique
+          What’s The Uniqueness of PHPR?
         </h2>
         <div class="flex justify-center">
           <div

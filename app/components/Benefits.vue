@@ -7,7 +7,7 @@
         <h2
           class="text-title-sm md:text-title-xl text-background font-semibold leading-[120%] md:leading-[unset]"
         >
-          Who Benefits?
+          Who Benefits From PHPR?
         </h2>
         <BenefitsSwitcher :tabs="tabs" v-model="activeIndex" />
         <BenefitsContent :activeTab="tabs[activeIndex]" />

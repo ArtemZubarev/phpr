@@ -39,7 +39,7 @@
         </div>
       </div>
       <p class="mt-[40px] text-text-sm md:text-text-md">
-        Think of PHPR as digital peso: secure, transparent, and instantly
+        Think of PHPR as a digital peso: secure, transparent, and instantly
         transferable.
       </p>
     </section>
