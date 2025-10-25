@@ -101,7 +101,7 @@ const menuItems = [
   { name: "Why PHPR", href: "#why-phpr" },
   { name: "How It Works", href: "#how-it-works" },
   { name: "Technology & Security", href: "#technology-security" },
-  { name: "WP", href: "#wp" },
+  { name: "WP", href: "/Whitepaper-PHPR.pdf" },
 ];
 
 function toggleMenu() {
