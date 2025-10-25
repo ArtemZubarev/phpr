@@ -92,20 +92,20 @@ const features = [
     text: "Parallel processing (sharding) for high throughput and fast finality.",
   },
   {
-    title: "Low fees ",
+    title: "Low fees",
     text: "Transfers cost a tiny fraction of a peso; perfect for frequent, small payments.",
   },
   {
-    title: "Transparent by design ",
+    title: "Transparent by design",
     text: "On-chain events for mint, burn, and circulation; public supply tracking.",
   },
   {
-    title: "Operational safeguards ",
+    title: "Operational safeguards",
     text: "Ability to pause in emergencies and freeze illicit addresses when legally required.",
   },
   {
-    title: "Remittance-ready UX ",
-    text: "Works with common wallets; listed on Topwallet for easy access and liquidity.",
+    title: "Remittance-ready UX",
+    text: "Works with common wallets; listed on TopWallet for easy access and liquidity.",
   },
 ];
 const meanings = [

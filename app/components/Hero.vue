@@ -10,10 +10,11 @@
           class="sign text-[10px] md:text-text-sm rounded-md px-4 md:px-10 md:mx-auto py-2 bg-background font-thin"
         ></span>
         <h1
-          class="title text-white-gradient text-center text-title md:text-title-xl leading-[110%] md:leading-[96%] font-semibold mt-[150px] md:mt-[50px]"
+          class="title text-white-gradient text-center text-title md:text-title-xl leading-[110%] md:leading-[105%] font-semibold mt-[150px] md:mt-[50px]"
         >
-          PHPR - Digital <br />
-          Peso for Quick Remittances
+          PHPR- Digital <br />
+          Fiat-Referenced Utility Token <br />
+          for Quick Remittances
         </h1>
         <h2
           class="mt-[14px] md:mt-[28px] text-[18px] text-center md:text-[24px] text-whiteFaded font-light"

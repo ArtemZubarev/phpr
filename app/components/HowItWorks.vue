@@ -51,7 +51,7 @@ const steps = [
   {
     image: ufo,
     title: "OFW sends PHPR",
-    text: "through a licensed exchange or partner abroad",
+    text: "through a licensed exchange or partner abroad.",
   },
   {
     image: engine,

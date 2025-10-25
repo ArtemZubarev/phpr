@@ -20,7 +20,7 @@
           compliance behind PHPR.
         </li>
         <li class="item text-[18px] md:text-[28px]">
-          Check our <b>Reserve Reports</b> for monthly proof‑of‑reserve data.
+          Check our <b>Reserve Reports</b> for monthly proof-of-reserve data.
         </li>
       </ul>
       <img
