@@ -6,7 +6,7 @@
       </h2>
       <p class="text-[18px] mt-[20px] md:text-[28px] max-w-[920px]">
         PHPR is a peso-referenced utility token that powers seamless remittance
-        and settlement inside the TopWallet ecosystem — fully reserve-backed,
+        and settlement inside the Topwallet ecosystem — fully reserve-backed,
         transparent, and compliant.
       </p>
       <div class="flex flex-col md:flex-row gap-[20px] mt-[60px]">
